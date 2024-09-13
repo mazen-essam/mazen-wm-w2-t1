@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container-me">
+      <nav class="bg-gray-100 lg:bg-transparent p-4">
+        <div class="grid grid-cols-12 gap-4">
+          <!-- Logo -->
+          <div class="col-span-2">
+            <img src="assets/Logo.png" alt="Logo" />
+          </div>
+          <div class="col-span-1"></div>
+
+          <!-- Nav Links for Large Screens -->
+          <div
+            class="col-span-6 hidden lg:flex justify-between lg:justify-around items-center"
+          >
+            <a href="#" class="text-[22px] font-[600]">Home</a>
+            <a href="#" class="text-[22px] font-[600]">Services</a>
+            <a href="#" class="text-[22px] font-[600]">Contact</a>
+            <a href="#" class="text-[22px] font-[600]">Support</a>
+          </div>
+
+          <div class="col-span-1"></div>
+
+          <!-- Sign Up Button -->
+          <div class="col-span-2 flex items-center justify-end">
+            <button class="btn-primary hidden lg:block">Sign Up</button>
+          </div>
+
+          <!-- Hamburger Menu Button for Small Screens -->
+          <div class="col-start-11 flex items-center justify-end lg:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-600 focus:outline-none focus:text-gray-900"
+            >
+              <i class="fa-solid fa-bars text-end"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div
+          id="mobile-menu"
+          class="mobile-menu hidden lg:hidden flex flex-col space-y-4 p-4 bg-gray-100"
+        >
+          <a href="#" class="text-[22px] font-[600]">Home</a>
+          <a href="#" class="text-[22px] font-[600]">Services</a>
+          <a href="#" class="text-[22px] font-[600]">Contact</a>
+          <a href="#" class="text-[22px] font-[600]">Support</a>
+          <button class="btn-primary">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    <main class="container-me">
+      <!-- start section header -->
+      <section class="header mt-10">
+        <div class="grid grid-cols-12 items-center">
+          <div class="col-span-6">
+            <h1
+              class="2xl:text-[133px] xl:text-[100px] lg:text-[70px] text-[60px] font-[500] leading-[160.96px]"
+            >
+              Interior Design
+            </h1>
+            <p class="p-primary 2xl:leading-[42.12px] leading-6">
+              Step into a world where the art of Interior Design is meticulously
+              crafted to bring together timeless elegance and cutting-edge
+              modern Innovation, Allowing you to transform your living spaces
+              into the epitome of luxury and sophistication
+            </p>
+            <button class="btn-primary mt-8">Start Project</button>
+          </div>
+          <div class="col-span-2"></div>
+          <div class="col-span-4">
+            <div class="img"><img src="assets/Image 1.png" alt="" /></div>
+          </div>
+          <div class="col-span-5 flex justify-between mt-20">
+            <p class="font-[400] 2xl:text-[20px] text-[14px] text-secondary">
+              <span
+                class="2xl:text-[70px] xl:text-[60px] lg:text-[50px] text-[40px] xl:leading-[80px] leading-10"
+                >400+</span
+              ><br />Project Complete
+            </p>
+            <p class="font-[400] 2xl:text-[20px] text-[14px] text-secondary">
+              <span
+                class="2xl:text-[70px] xl:text-[60px] lg:text-[50px] text-[40px] xl:leading-[80px] leading-10"
+                >600+</span
+              ><br />Satisfied Clients
+            </p>
+            <p class="font-[400] 2xl:text-[20px] text-[14px] text-secondary">
+              <span
+                class="2xl:text-[70px] xl:text-[60px] lg:text-[50px] text-[40px] xl:leading-[80px] leading-10"
+                >100+</span
+              ><br />Unique Styles
+            </p>
+          </div>
+          <div class="col-span-1"></div>
+          <div class="col-span-6">
+            <div class="img"><img src="assets/Image 2.png" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <!-- end section header -->
+      <!-- start section service -->
+      <section class="service mt-16">
+        <div class="2xl:ps-[100px] xl:ps-[75px] lg:ps-[60px] ps-[50px]">
+          <h2 class="relative class-before">Our Services</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-6 mt-8">
+          <div class="lg:col-span-1 col-span-3 grid grid-cols-5 gap-4">
+            <div class="col-span-1">
+              <div class="img">
+                <img src="assets/Lighting design icon.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-span-4">
+              <h5 class="2xl:text-[30px] xl:text-[25px] text-[20px] mb-4">
+                Lighting Design
+              </h5>
+              <p class="p-primary">
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-1 col-span-3 grid grid-cols-5 gap-4">
+            <div class="col-span-1">
+              <div class="img">
+                <img src="assets/Interior design icon.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-span-4">
+              <h5 class="2xl:text-[30px] xl:text-[25px] text-[20px] mb-4">
+                Interior Design
+              </h5>
+              <p class="p-primary">
+                From concept to completion, we oversee every detail to bring
+                your vision to life efficiently
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-1 col-span-3 grid grid-cols-5 gap-4">
+            <div class="col-span-1">
+              <div class="img">
+                <img src="assets/Outdoor design icon.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-span-4">
+              <h5 class="2xl:text-[30px] xl:text-[25px] text-[20px] mb-4">
+                Outdoor Design
+              </h5>
+              <p class="p-primary">
+                Celebrate the changing seasons with our seasonal outdoor decor
+                services
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section service -->
+      <!-- start section dream1 -->
+      <section class="dream1 mt-20">
+        <div class="md:flex md:justify-between md:gap-12">
+          <div class="md:flex-1 img">
+            <img src="assets/Mask group.png" alt="" />
+          </div>
+          <div class="md:flex-1 md:mt-0 mt-10">
+            <h3 class="h-primary">Designing Your Dream With Brilliance</h3>
+            <p class="p-primary mt-6">
+              Elevate your spaces with bespoke interior designs that reflect
+              your unique style and aspirations, crafted with precision and
+              brilliance for an unforgettable living experience
+            </p>
+            <div
+              class="flex justify-between 2xl:text-2xl text-lg font-600 text-primary border-b-2 border-[#DADADA] mt-6 pb-2"
+            >
+              <p>Living Room Interior Design</p>
+              <p>+</p>
+            </div>
+            <div
+              class="flex justify-between 2xl:text-2xl text-lg font-600 text-primary border-b-2 border-[#DADADA] mt-6 pb-2"
+            >
+              <p>Commercial Office Room Interior Design</p>
+              <p>+</p>
+            </div>
+            <button class="btn-primary mt-16">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <!-- end section dream1 -->
+      <!-- start section dream2 -->
+      <section class="dream2 mt-20">
+        <div class="md:flex md:justify-between md:gap-12">
+          <div class="md:flex-1 md:mt-0 mt-10">
+            <h3 class="h-primary">
+              Designing Your Dream in Three Simple Steps
+            </h3>
+            <div class="flex flex-col space-y-16 items-start mx-auto my-16">
+              <!-- Start Project -->
+              <div class="flex space-x-4 items-start relative">
+                <div
+                  class="bg-primary rounded-full p-3 before:w-[0.15rem] before:bg-[#9B9B9B] before:h-24 before:absolute before:left-[1.4rem] before:top-16"
+                >
+                  <!-- Replace with img tag for the rocket icon -->
+                  <img
+                    src="assets/rocket.png"
+                    alt="Start Project Icon"
+                    class="h-6 w-10 text-white"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Start Project</h3>
+                  <p class="p-primary mt-8">
+                    Embark on your design adventure by initiating your project.
+                    Share your vision and set the stage for a bespoke design
+                    experience.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Craft -->
+              <div class="flex space-x-4 items-start relative">
+                <div
+                  class="bg-primary rounded-full p-3 before:w-[0.15rem] before:bg-[#9B9B9B] before:h-24 before:absolute before:left-[1.4rem] before:top-16"
+                >
+                  <!-- Replace with img tag for the light bulb icon -->
+                  <img
+                    src="assets/lamp.png"
+                    alt="Craft Icon"
+                    class="h-6 w-10 text-white"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Craft</h3>
+                  <p class="p-primary mt-8">
+                    Collaborate closely to achieve design excellence, refining
+                    your vision and crafting brilliance into every aspect of
+                    your space.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Execute -->
+              <div class="flex space-x-4 items-start">
+                <div class="bg-primary rounded-full p-3">
+                  <!-- Replace with img tag for the check icon -->
+                  <img
+                    src="assets/execute.png"
+                    alt="Execute Icon"
+                    class="h-6 w-10 text-white"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Execute</h3>
+                  <p class="p-primary mt-8">
+                    Witness your vision becoming a reality as we execute the
+                    design plan with precision. Celebrate the joy of your newly
+                    transformed space.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex-1 img">
+            <img src="assets/Mask group.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- end section dream2 -->
+      <!-- start section customer -->
+      <section class="customer mt-20">
+        <div class="relative">
+          <div class="before-cust">
+            <div class="t bg-primary w-1/2 px-10 py-28">
+              <p class="text-[150px] leading-[80px] text-white">“</p>
+              <p class="text-white text-2xl leading-9 font-medium">
+                Working with your design team was an absolute pleasure. The
+                attention to detail and creativity exceeded my expectations.
+                Thank you for making my home beautiful!
+              </p>
+              <div class="flex gap-2 mt-8">
+                <div>
+                  <img src="assets/image 17.jpg" class="rounded-full" alt="" />
+                </div>
+                <div class="text-white flex flex-col justify-center">
+                  <h6 class="text-2xl font-semibold">Sophie Carter</h6>
+                  <p class="text-[#929292] text-xl font-medium">
+                    New York, USA
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="t bg-primary w-1/2 px-10 py-28">
+              <p class="text-[150px] leading-[80px] text-white">“</p>
+              <p class="text-white text-2xl leading-9 font-medium">
+                Exceptional service! From the initial consultation to the final
+                reveal, your team demonstrated professionalism and a keen eye
+                for design. Highly recommend!
+              </p>
+              <div class="flex gap-2 mt-8">
+                <div><img src="assets/Mask group (2).png" alt="" /></div>
+                <div class="text-white flex flex-col justify-center">
+                  <h6 class="text-2xl font-semibold">James Bennett</h6>
+                  <p class="text-[#929292] text-xl font-medium">
+                    Toronto, Canada
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12">
+            <div class="img">
+              <img src="assets/Mask group (1).png" alt="" />
+              <div class="flex gap-4 mt-4">
+                <div class="bg-slate-100 py-3 px-4">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="bg-slate-100 py-3 px-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="h-primary">What Our Customers Say About Us</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section customer -->
+      <!-- start section sub -->
+      <section class="sub w-2/5 m-auto text-center mt-10 mb-[-7rem]">
+        <h3 class="h-primary">
+          Subscribe to Our Newsletter for Design Insights
+        </h3>
+        <p class="p-primary mt-8">
+          Be the first to discover trends, inspirations, and special offers as
+          we bring the world of design directly to your inbox
+        </p>
+        <div class="relative mt-8">
+          <i class="fa-solid fa-envelope absolute top-[40%] left-[2rem]"></i>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="w-[100%] shadow-[0px_10px_100px_0px_rgba(0,0,0,0.3)] px-16 py-6 rounded-lg"
+          />
+          <button class="absolute btn-primary right-8 top-2">Subscribe</button>
+        </div>
+      </section>
+      <!-- end section sub -->
+    </main>
+    <footer class="bg-primary text-white pb-8 pt-36 mt-20">
+      <div class="container mx-auto grid grid-cols-4 gap-8">
+        <!-- VivaDecor Logo and Description -->
+        <div>
+          <img src="assets/footerlogo.png" alt="VivaDecor Logo" class="mb-4" />
+          <p class="text-sm">
+            VivaDecor your premier destination for luxury and modern interior
+            design
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-facebook h-5 w-5"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-twitter h-5 w-5"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-instagram h-5 w-5"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-linkedin h-5 w-5"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Our Services Column 1 -->
+        <div>
+          <h3 class="font-bold mb-4">Our Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Interior design</a></li>
+            <li><a href="#" class="hover:underline">Outdoor design</a></li>
+            <li><a href="#" class="hover:underline">Lighting design</a></li>
+            <li><a href="#" class="hover:underline">Office design</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Services Column 2 -->
+        <div>
+          <h3 class="font-bold mb-4">Our Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Reviews</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Pricing</a></li>
+            <li><a href="#" class="hover:underline">Press inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h3 class="font-bold mb-4">Our Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="mailto:info@vivadecor.com" class="hover:underline"
+                >info@vivadecor.com</a
+              >
+            </li>
+            <li>Design Avenue Cityville, CA 90210 United States</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // JavaScript to toggle the mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

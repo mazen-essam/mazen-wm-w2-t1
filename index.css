@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container-me {
+  width: 93% !important;
+  margin: auto;
+  margin-top: 2rem;
+}
+.h-primary {
+  @apply font-[600] text-primary 2xl:text-[58px] xl:text-[45px] lg:text-[35px] text-[30px] 2xl:leading-[70px] xl:leading-[50px] leading-[30px];
+}
+.btn-primary {
+  @apply bg-primary rounded text-[20px] leading-[24.2px] 2xl:px-10 2xl:py-4 px-6 py-2 text-white;
+}
+.p-primary {
+  @apply 2xl:text-[24px] xl:text-[20px] lg:text-[18px] text-[16px] font-[500] text-secondary;
+}
+.class-before {
+  @apply text-primary font-semibold 2xl:text-[58px] xl:text-[45px] lg:text-[35px] text-[30px]  2xl:before:w-[100px] xl:before:w-[80px] lg:before:w-[60px] before:w-[50px] before:h-1 before:bg-primary before:absolute 2xl:before:left-[-110px] xl:before:left-[-80px] lg:before:left-[-70px] before:left-[-60px] before:top-[50%];
+}
+
+.customer .before-cust {
+  position: absolute;
+  top: 240px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 85%;
+}
+.mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .container-me {
+    width: 95% !important ;
+  }
+  .container-me:first-child {
+    width: 100% !important;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .before-cust {
+    display: none !important;
+  }
+}
